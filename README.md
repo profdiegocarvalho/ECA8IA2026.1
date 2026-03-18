@@ -32,7 +32,7 @@ Nesta seção, descrevemos o cenário de atuação e a modelagem do agente intel
 | **Performance (P)** | Critérios de sucesso (ex: precisão de acerto, kWh economizados). |
 | **Ambiente (E)** | Onde o agente opera (ex: armazém simulado, rede elétrica). |
 | **Atuadores (A)** | Como o agente age (ex: acionamento de motores, válvulas). |
-| **Sensores (S) ** | Como o agente percebe o ambiente (ex: câmeras, sensores de carga). |
+| **Sensores (S)** | Como o agente percebe o ambiente (ex: câmeras, sensores de carga). |
 
 ---
 
