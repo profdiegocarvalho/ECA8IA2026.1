@@ -1,12 +1,11 @@
-# Projeto: Agente de IA XXXXXX
+# Projeto: Agente de IA CardioPredict 4.0
 
 ### 1. Identificação do Grupo
 * **Instituição:** Fundação Salvador Arena
-* **Curso:** [Inserir Nome do Curso]
-* **Grupo:** [Inserir Nome ou Número do Grupo]
-* **Integrantes:** * Diego Marques de Carvalho - RA: 21002603
-    * [Nome Completo] - RA: [000000]
-    * [Nome Completo] - RA: [000000]
+* **Curso:** Engenharia de Controle e Automação
+* **Grupo:** Grupo X
+* **Integrantes:**
+    * Diego Marques de Carvalho - RA: 21002603
 
 ---
 
@@ -22,44 +21,44 @@ Selecione a trilha tecnológica do projeto (marque com um [x]):
 ### 3. Diagnóstico e Definição do Agente
 Nesta seção, descrevemos o cenário de atuação e a modelagem do agente inteligente.
 
-* **Contexto:** [Descrever o setor, ex: Indústria 4.0 ou Gestão de Energia].
-* **Problema:** [Explicar o gargalo ou falha que a IA ajudará a resolver].
-* **Impacto:** [Mencionar o ganho esperado, ex: redução de custos ou aumento de segurança].
+* **Contexto:** O projeto aplica-se ao setor de saúde digital e monitoramento intensivo, onde a velocidade de diagnóstico é o fator determinante entre a vida e a morte em eventos cardiovasculares.
+* **Problema:** A dificuldade de identificar padrões sutis em sinais vitais que precedem um infarto, resultando em diagnósticos tardios em ambientes de triagem ou monitoramento remoto.
+* **Impacto:** A implementação deste agente visa reduzir o tempo de resposta médica e aumentar a precisão na identificação de pacientes de alto risco, reduzindo a taxa de mortalidade hospitalar.
 
 #### Modelagem PEAS (Agente Inteligente)
 | Componente | Descrição |
 | :--- | :--- |
-| **Performance (P)** | Critérios de sucesso (ex: precisão de acerto, kWh economizados). |
-| **Ambiente (E)** | Onde o agente opera (ex: armazém simulado, rede elétrica). |
-| **Atuadores (A)** | Como o agente age (ex: acionamento de motores, válvulas). |
-| **Sensores (S)** | Como o agente percebe o ambiente (ex: câmeras, sensores de carga). |
+| **Performance (P)** | Minimizar falsos negativos; Alcançar acurácia superior a 85% na classificação de risco. |
+| **Ambiente (E)** | Sistema de monitoramento de UTI ou dispositivo vestível (wearable) de telemedicina. |
+| **Atuadores (A)** | Painel de alerta para a equipe de enfermagem; Disparo de notificação de emergência. |
+| **Sensores (S)** | Leitura de pressão arterial, frequência cardíaca, idade, nível de colesterol e ECG. |
 
 ---
 
 ### 4. Arquitetura de Dados e IA
 Definição das fontes de dados e da inteligência por trás da solução.
 
-* **Origem dos Dados:** (https://www.kaggle.com/datasets/fatemehmohammadinia/heart-attack-dataset-tarik-a-rashid).
-* **Lógica de IA:**  Redes Neurais.
-* **Justificativa:** Por que essa técnica é ideal para este problema específico?
+* **Origem dos Dados:** [Heart Attack Dataset - Kaggle](https://www.kaggle.com/datasets/fatemehmohammadinia/heart-attack-dataset-tarik-a-rashid).
+* **Lógica de IA:** Redes Neurais Artificiais (Multilayer Perceptron).
+* **Justificativa:** Redes neurais são altamente eficientes no processamento de grandes volumes de dados tabulares médicos, permitindo encontrar correlações não lineares entre os sintomas e o desfecho clínico do paciente.
 
 ---
 
 ### 5. Plano de Tratamento de Dados (ETL)
 O fluxo de processamento dos dados segue estas etapas:
-1. **Extração:** Coleta de dados via arquivos [CSV].
-2. **Transformação:** Limpeza de nulos, normalização e engenharia de atributos.
-3. **Carga:** Disponibilização dos dados para o treinamento do modelo de IA.
+1. **Extração:** Leitura automatizada do arquivo `heart_attack_dataset.csv` via biblioteca Pandas.
+2. **Transformação:** Normalização de dados numéricos (Min-Max Scaling), tratamento de valores ausentes (Imputação pela média) e codificação de variáveis binárias.
+3. **Carga:** Armazenamento dos tensores prontos para o modelo na pasta `/data/processed`.
 
 ---
 
 ### 6. Estrutura do Repositório
 Organização simplificada para o Milestone 1:
 * `/data`: Arquivos de dados originais (raw) e tratados (processed).
-* `/notebooks`: Experimentos iniciais e análise exploratória.
-* `/scripts`: Códigos Python (.py) contendo a lógica do agente e do ETL.
-* `requirements.txt`: Lista de bibliotecas para rodar o projeto.
-* `README.md`: Documentação atual do projeto.
+* `/notebooks`: Experimentos iniciais de análise exploratória e correlação.
+* `/scripts`: Códigos Python (.py) contendo a classe do Agente e scripts de ETL.
+* `requirements.txt`: Lista de bibliotecas (Numpy, Pandas, Scikit-learn, TensorFlow).
+* `README.md`: Documentação técnica do projeto.
 
 ---
 
