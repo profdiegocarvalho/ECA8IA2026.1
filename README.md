@@ -40,14 +40,14 @@ Nesta seção, descrevemos o cenário de atuação e a modelagem do agente intel
 Definição das fontes de dados e da inteligência por trás da solução.
 
 * **Origem dos Dados:** (https://www.kaggle.com/datasets/fatemehmohammadinia/heart-attack-dataset-tarik-a-rashid).
-* **Lógica de IA:** [Técnica utilizada: ex: Redes Neurais, Lógica Fuzzy, Busca A*].
+* **Lógica de IA:**  Redes Neurais.
 * **Justificativa:** Por que essa técnica é ideal para este problema específico?
 
 ---
 
 ### 5. Plano de Tratamento de Dados (ETL)
 O fluxo de processamento dos dados segue estas etapas:
-1. **Extração:** Coleta de dados via arquivos [CSV/JSON] ou simulação.
+1. **Extração:** Coleta de dados via arquivos [CSV].
 2. **Transformação:** Limpeza de nulos, normalização e engenharia de atributos.
 3. **Carga:** Disponibilização dos dados para o treinamento do modelo de IA.
 
